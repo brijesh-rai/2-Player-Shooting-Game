@@ -82,6 +82,9 @@ p1_shoot_btn.addEventListener("click",function(){
         },2000)
         final_power_p2=100
         $("#p2-progress").width(final_power_p2+"%")
+        p2_progress.style.backgroundColor = "rgb(0, 199, 17)"
+        p1_progress.style.backgroundColor = "rgb(0, 199, 17)"
+        $("#p1-progress").width(final_power_p2+"%")
         p1_health.innerText = 100
         ++count
     }
@@ -139,6 +142,9 @@ p2_shoot_btn.addEventListener("click",function(){
         },2000)
         final_power_p1=100
         $("#p1-progress").width(final_power_p1+"%")
+        $("#p2-progress").width(final_power_p1+"%")
+        p1_progress.style.backgroundColor = "rgb(0, 199, 17)"
+        p2_progress.style.backgroundColor = "rgb(0, 199, 17)"
         p2_health.innerText = 100
         final_power_p1=100
         ++count
